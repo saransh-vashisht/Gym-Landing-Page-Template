@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeerBiceps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* CSS Reset */
+    body {
+      font-family: "Lobster", cursive;
+      margin: 0px;
+      padding: 0px;
+      background: url("image/bg2.jpg");
+      
+    
+      /* height: 4544px; */
+      color: white;
+    }
+    .left {
+      display: inline-block;
+      /* border: 2px solid red; */
+      position: absolute;
+      left: 60px;
+      top: 20px;
+    }
+    .left img {
+      width: 150px;
+      height: 100px;
+      padding-left: 16px;
+      filter: invert(100%);
+    }
+    .left div {
+      text-align: center;
+      line-height: 19px;
+      font-size: 26px;
+    }
+    .mid {
+      display: block;
+      width: 50%;
+      margin: 29px auto;
+      /* border: 2px solid green; */
+    }
+    .right {
+      display: inline-block;
+      position: absolute;
+      right: 34px;
+
+      top: 43px;
+      /* border: 2px solid yellow; */
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 25px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 34px 23px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: rgb(88, 88, 88);
+    }
+    .btn {
+      font-family: "Lobster", cursive;
+      margin: 0px 9px;
+      color: whitesmoke;
+      background-color: rgb(24, 21, 21);
+      padding: 4px 14px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(95, 92, 92);
+    }
+    .container {
+      border: 2px solid white;
+      margin: 106px 80px;
+      padding: 75px;
+      width: 35%;
+      border-radius: 28px;
+    }
+    .container  h1{
+        text-align: center;
+        
+    }
+    .container button{
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    .form-group input{
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 8px;
+
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="left">
+        <!-- left box for logo -->
+        <!-- I am Left -->
+        <img src="image/dumbell.png" alt="" />
+        <div>BeerBiceps Fitness</div>
+      </div>
+      <!-- mid text for navbar -->
+      <div class="mid">
+        <!-- I am Mid -->
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+        <!-- I am Right -->
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <!-- Main ek container huuu -->
+      <h1>Join The Best Gym Of DELHI Now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter Your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter Your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter Your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter Your Locality" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
